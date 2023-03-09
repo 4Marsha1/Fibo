@@ -1,4 +1,5 @@
 import Main from "./Main"
+import MobileDashboard from "./MobileDashboard"
 import Sidebar from "./Sidebar"
 import styles from "./styles.module.css"
 
@@ -7,6 +8,7 @@ const DashboardComponent = () => {
         <div className={styles["container"]}>
             <Sidebar />
             <Main />
+            <MobileDashboard />
         </div>
     )
 }

@@ -4,10 +4,10 @@ import { ReactComponent as RevenueIcon } from "../../assets/dashboard/main/reven
 import { ReactComponent as SalesIcon } from "../../assets/dashboard/main/sales.svg"
 import { ReactComponent as Graph } from "../../assets/dashboard/main/graph.svg"
 import comingSoonImg from "../../assets/dashboard/main/coming_soon.png"
-import { quick_actions } from "./quick_actions"
+import { quickActions } from "./quickActions"
 
 const Main = () => {
-    const getQuickActions = () => quick_actions.map(item => (
+    const getQuickActions = () => quickActions.map(item => (
         <div className={styles["quick__action"]} key={item.id}>
             <item.svg className={styles["quick__action__icon"]} />
             <span className={styles["quick__action__text"]}>{item.title}</span>

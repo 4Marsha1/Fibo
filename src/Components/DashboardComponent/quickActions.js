@@ -4,7 +4,7 @@ import { ReactComponent as Gym } from "../../assets/dashboard/main/gym.svg"
 import { ReactComponent as Fees } from "../../assets/dashboard/main/fees.svg"
 
 
-export const quick_actions = [
+export const quickActions = [
     {
         id: 1,
         title: 'Add Members',
