@@ -17,6 +17,7 @@ const LoginComponent = () => {
                     </span>
                 </div>
             </div>
+
             <div className={styles["login__section"]}>
                 <div className={styles["logo__wrapper"]}>
                     <img src={Logo} className={styles["logo"]} alt="logo" />
@@ -52,6 +53,40 @@ const LoginComponent = () => {
                     </span>
                 </div>
             </div>
+
+            {/* Mobile View  */}
+
+            <div className={styles["mobile__branding__section"]}>
+            </div>
+            <div className={styles["mobile__login__section"]}>
+                <div className={styles["top__section"]}>
+                    <span className={styles["mobile__login__text"]}>Login</span>
+                    <form className={styles["login__form"]}>
+                        <div className={styles["login__input__group"]}>
+                            <label>+91</label>
+                            <span></span>
+                            <input className={styles["login__input"]} type="text" placeholder="mobile number" />
+                        </div>
+                    </form>
+                    <div className={styles["hr__wrapper"]}>
+                        <span className={styles["hr"]}></span>
+                        <span className={styles["hr__or"]}>OR</span>
+                        <span className={styles["hr"]}></span>
+                    </div>
+                    <div className={styles["login__google"]}>
+                        <img src={GoogleLogo} className={styles["google__logo"]} alt="google logo" />
+                        <span className={styles["login__google__text"]}>
+                            Log in with Google
+                        </span>
+                    </div>
+                    <span className={styles["login__already"]}>Already have an account? <span className={styles["sign__in"]}>Sign In!</span></span>
+                </div>
+                <div className={styles["bottom__section"]}>
+                    <span className={styles["login__tc"]}>By continuing, I agree to the terms of service and privacy policy</span>
+                    <input className={styles["login__btn"]} type="submit" value="Continue" />
+                </div>
+            </div>
+
         </div>
     )
 }

@@ -168,3 +168,80 @@
 	font-weight: 500;
 	color: #ffffff;
 }
+
+.mobile__branding__section,
+.mobile__login__section {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		flex-direction: column;
+	}
+	.branding__section {
+		display: none;
+	}
+	.login__section {
+		display: none;
+	}
+	.mobile__branding__section {
+		display: block;
+		height: 400px;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url("../../assets/login/branding_mobile.png");
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+	}
+	.mobile__login__section {
+		margin-top: -20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: #2c2c2c;
+		height: 100dvh;
+		border-radius: 20px 20px 0 0;
+		padding: 2rem;
+	}
+	.top__section {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+	.mobile__login__text {
+		width: 100%;
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: 700;
+	}
+	.login__form {
+		width: 100%;
+	}
+	.login__google {
+		width: 100%;
+		border: 1px solid #5b5b5b;
+		border-radius: 12px;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem 0;
+	}
+	.login__already,
+	.login__tc {
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.01em;
+		text-align: center;
+	}
+	.sign__in {
+		color: #ff8d24;
+		cursor: pointer;
+	}
+	.bottom__section {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+}
