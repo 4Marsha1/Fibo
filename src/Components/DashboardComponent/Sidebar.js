@@ -2,11 +2,16 @@ import styles from "./styles.module.css"
 import Logo from "../../assets/logo.png"
 import { routes } from "./routes"
 
-const Sidebar = () => {
+const Sidebar = ({ logout }) => {
     const getRoutes = () => routes.map(route => (
         <div className={styles["sidebar__tab"]} key={route.id}>
             <route.svg />
-            <span className={route.active ? styles["route__title__active"] : styles["route__title__inactive"]}>{route.title}</span>
+            {route.title === "Logout" ?
+                <span className={route.active ? styles["route__title__active"] : styles["route__title__inactive"]}
+                    onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
+                >{route.title}</span>
+                :
+                <span className={route.active ? styles["route__title__active"] : styles["route__title__inactive"]}>{route.title}</span>}
         </div>
     ))
 

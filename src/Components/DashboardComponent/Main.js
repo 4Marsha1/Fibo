@@ -1,27 +1,22 @@
 import styles from "./styles.module.css"
+
 import { ReactComponent as BellIcon } from "../../assets/dashboard/main/bell.svg"
 import { ReactComponent as RevenueIcon } from "../../assets/dashboard/main/revenue.svg"
 import { ReactComponent as SalesIcon } from "../../assets/dashboard/main/sales.svg"
 import { ReactComponent as Graph } from "../../assets/dashboard/main/graph.svg"
 import comingSoonImg from "../../assets/dashboard/main/coming_soon.png"
+
 import { quickActions } from "./quickActions"
 
-const Main = ({ logout }) => {
+const Main = () => {
     const getQuickActions = () => quickActions.map(item => (
         <div className={styles["quick__action"]} key={item.id}>
             <item.svg className={styles["quick__action__icon"]} />
-            {item.title === 'Logout' ?
-                <span className={styles["quick__action__text"]}
-                    onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
-
-                >{item.title}</span>
-                :
-                <span className={styles["quick__action__text"]}>{item.title}</span>
-
-            }
+            <span className={styles["quick__action__text"]}>{item.title}</span>
             <div></div>
         </div>
     ))
+
     return (
         <div className={styles["main"]}>
             <div className={styles["navbar"]}>
