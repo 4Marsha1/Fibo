@@ -3,7 +3,7 @@ import BrandingImg from "../../assets/login/branding_image.png"
 import Logo from "../../assets/logo.png"
 import GoogleLogo from "../../assets/login/google_logo.png"
 
-const LoginComponent = () => {
+const LoginComponent = ({ loginWithRedirect }) => {
     return (
         <div className={styles["container"]}>
             <div className={styles["branding__section"]}>
@@ -48,7 +48,7 @@ const LoginComponent = () => {
                 </div>
                 <div className={styles["login__google"]}>
                     <img src={GoogleLogo} className={styles["google__logo"]} alt="google logo" />
-                    <span className={styles["login__google__text"]}>
+                    <span className={styles["login__google__text"]} onClick={() => loginWithRedirect()}>
                         Log in with Google
                     </span>
                 </div>

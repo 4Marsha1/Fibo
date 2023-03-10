@@ -6,11 +6,19 @@ import { ReactComponent as Graph } from "../../assets/dashboard/main/graph.svg"
 import comingSoonImg from "../../assets/dashboard/main/coming_soon.png"
 import { quickActions } from "./quickActions"
 
-const Main = () => {
+const Main = ({ logout }) => {
     const getQuickActions = () => quickActions.map(item => (
         <div className={styles["quick__action"]} key={item.id}>
             <item.svg className={styles["quick__action__icon"]} />
-            <span className={styles["quick__action__text"]}>{item.title}</span>
+            {item.title === 'Logout' ?
+                <span className={styles["quick__action__text"]}
+                    onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
+
+                >{item.title}</span>
+                :
+                <span className={styles["quick__action__text"]}>{item.title}</span>
+
+            }
             <div></div>
         </div>
     ))

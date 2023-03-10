@@ -3,11 +3,13 @@ import MobileDashboard from "./MobileDashboard"
 import Sidebar from "./Sidebar"
 import styles from "./styles.module.css"
 
-const DashboardComponent = () => {
+const DashboardComponent = ({ logout }) => {
     return (
         <div className={styles["container"]}>
             <Sidebar />
-            <Main />
+            <Main
+                logout={logout}
+            />
             <MobileDashboard />
         </div>
     )
