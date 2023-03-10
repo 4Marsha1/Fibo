@@ -1,4 +1,5 @@
 import styles from "./style.module.css"
+
 import BrandingImg from "../../assets/login/branding_image.png"
 import Logo from "../../assets/logo.png"
 import GoogleLogo from "../../assets/login/google_logo.png"
@@ -56,8 +57,8 @@ const LoginComponent = ({ loginWithRedirect }) => {
 
             {/* Mobile View  */}
 
-            <div className={styles["mobile__branding__section"]}>
-            </div>
+            <div className={styles["mobile__branding__section"]}></div>
+
             <div className={styles["mobile__login__section"]}>
                 <div className={styles["top__section"]}>
                     <span className={styles["mobile__login__text"]}>Login</span>

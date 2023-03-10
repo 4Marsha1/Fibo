@@ -4,6 +4,7 @@
 	display: flex;
 }
 
+/* Sidebar styles  */
 .sidebar {
 	flex: 1;
 	background-color: #272727;
@@ -50,6 +51,7 @@
 	color: #a3a3a3;
 }
 
+/* Main Dashboard Styles  */
 .main {
 	flex: 4;
 	background-color: #212121;
@@ -201,6 +203,7 @@
 	display: none;
 }
 
+/* Mobile View Styles  */
 @media screen and (max-width: 600px) {
 	.sidebar,
 	.main {

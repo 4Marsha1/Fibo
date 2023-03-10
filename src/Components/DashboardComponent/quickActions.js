@@ -3,7 +3,6 @@ import { ReactComponent as ManageStaff } from "../../assets/dashboard/main/manag
 import { ReactComponent as Gym } from "../../assets/dashboard/main/gym.svg"
 import { ReactComponent as Fees } from "../../assets/dashboard/main/fees.svg"
 
-
 export const quickActions = [
     {
         id: 1,

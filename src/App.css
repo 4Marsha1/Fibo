@@ -4,10 +4,6 @@
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
 }
-#landing {
-	background-color: #0e172a;
-	overflow: hidden;
-}
 
 ::-webkit-scrollbar {
 	width: 5px;
